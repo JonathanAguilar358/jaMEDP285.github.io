@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'UnB Pro Black';
+    src: url('fonts/unb_pro_black-webfont.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'UnB Pro Black Bold';
+    src: url('fonts/unb_pro_bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'UnB Pro Black Regular';
+    src: url('fonts/unb_pro_bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'UnB Office Regular';
+    src: url('fonts/unb-office_regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'A.ABF-Petit-Trial';
+    src: url('fonts/A.ABF-Petit-Trial.otf');
+}
+
+@font-face {
+    font-family: 'A.ABFLineaire-Light-Trial';
+    src: url('fonts/A.ABFLineaire-Light-Trial.otf');
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-text-color: #292826;
+    --main-boxes-color: #838270;
+    --main-background-color: #E4E0D5;
+    --rich-black: #252222;
+    --footer-text: #3b3b3b;
+    --creamy-white: #f7f7ef;
+}
+
+body {
+    background-color: #E4E0D5;
+}
+
+.title {
+    color: var(--main-text-color);
+    font-size: 90px;
+    /* font-family: 'UnB Pro Black Bold'; */
+    font-family: 'A.ABFLineaire-Light-Trial';
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+main {
+    display: block;
+    margin-top: 5%;
+    /* border: 2px solid green; */
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: #f2f2f2; */
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding: 12px;
+    outline: none;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px dashed #ccc;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 102%;
+    min-height: 100px;
+    max-height: 300px;
+    border: 2px solid #ccc;
+}
+
+input[type=submit] {
+    color: var(--creamy-white);
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--rich-black);
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: var(--main-boxes-color);
+}
+
+
+@media (max-width: 576px) {
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: 90%;
+    }
+}

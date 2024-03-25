@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Prod 1 | Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="dropdown_menu">
+                <a href="index.html">Home</a>
+                <hr>
+                <a href="pageTwo.html">Assignments</a>
+                <hr>
+                <a href="#">Other</a>
+                <hr>
+                <a href="#">Contact</a>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <hr>
+                <a href="pageTwo.html">Assignments</a>
+                <hr>
+                <a href="#">Other</a>
+                <hr>
+                <a href="contact.html">Contact</a>
+                <hr>
+            </nav>
+            <h1 class="title">Contact</h1>
+            <div class="name-description-div">
+                <h1>JA.4</h1>
+                <p class="name-description">Hi! My name is Jonathan Aguilar and I am a Media Studies major with a concentration in <b>Emerging Media</b>. I'm an intermediate in HTML and CSS and hope to advance my proficiency in them. I also hope to learn Javascript and other front end programming techniques in order to make my websites more dynamic and interactive. I aim to create unique yet simple websites</p>
+                <br>
+                <hr style="height: 1px;">
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <form action="mailto: jonathan.aguilarvivaldo29@myhunter.cuny.edu" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name...">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write Something..."></textarea>
+
+                    <input type="submit" value="submit">
+                </form>
+            </section>
+        </main>
+    </div>
+    
+    <script src="js/nav.js"></script>
+</body>
+</html>
